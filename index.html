@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+</body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystals Collector Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script src="assets/javascript/game.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+</head>
+
+<body background="assets/images/bananas.png">
+    <div>
+        <h1>CrystalsCollector!</h1>
+        <!-- colour: #CB7032 -->
+    </div>
+    <div>
+        <!-- colour: #FBE7CE  -->
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of
+            points to your total score.
+        </p>
+        <p>You will the game by matching your total score to the random number, you lose the game if your
+            total score goes above the random number.
+        </p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div id="magicNumber" class="col-6"> 
+                <!-- colour: #54C887 -->
+                1 of 2
+            </div>
+            <div class="col">
+                <!-- colour: #38FEFB -->
+                <p>Wins:</p>
+                <p>Loses:</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div id="crystal1" class="col">
+                <img src="assets/images/BlueGem.jpg" alt="Blue Gem" height=150px width=150px>
+            </div>
+            <div id="crystal2" class="col">
+                <img src="assets/images/GreenGem.jpg" alt="Green Gem" height=150px width=150px>
+            </div>
+            <div id="crystal3" class="col">
+                <img src="assets/images/PurpleGem.jpg" alt="Purple Gem" height=150px width=150px>
+            </div>
+            <div id="crystal4" class="col">
+                <img src="assets/images/RedGem.jpg" alt="Red Gem" height=150px width=150px>
+            </div>
+        </div>
+    </div>
+
+    <!-- colour: #1FA396 -->
+    <div>Your total score is:</div>
+    <div id="totalScore"></div>
+
+
+
+
+
+</body>
+
+</html>
