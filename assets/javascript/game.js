@@ -26,14 +26,14 @@ $(document).ready(function () {
         totalScore = 0;
         $("#targetNumber").text(targetNumber);
         $("#totalScore").text(totalScore);
-        $("#crystal1").attr("crystalValue", crystal1Num);
-        $("#crystal2").attr("crystalValue", crystal2Num);
-        $("#crystal3").attr("crystalValue", crystal3Num);
-        $("#crystal4").attr("crystalValue", crystal4Num);
+        $("#crystal1").attr("data-crystalValue", crystal1Num);
+        $("#crystal2").attr("data-crystalValue", crystal2Num);
+        $("#crystal3").attr("data-crystalValue", crystal3Num);
+        $("#crystal4").attr("data-crystalValue", crystal4Num);
         $("#wins").text(wins);
         $("#losses").text(losses);
 
-        console.log(crystal1Num);
+        console.log($("crystal1"));
     }
 
     function youWin() {
@@ -54,14 +54,16 @@ $(document).ready(function () {
         if (totalScore >= targetNumber) {
             return;
         }
-        console.log(crystalValue);
-        var crystalValue = $(".crystalimage").attr("crystalValue");
+        console.log(this);
+        var crystalValue = $(this).attr("data-crystalValue");
+        console.log(58, crystalValue)
         crystalValue = parseInt(crystalValue);
+        console.log(61, typeof crystalValue);
         totalScore += crystalValue;
         $("#totalScore").text(totalScore);
 
-        console.log(totalScore);
-        console.log(crystalValue);
+        console.log(65, totalScore);
+        console.log(66, crystalValue);
 
         if (totalScore === targetNumber) {
             youWin();
