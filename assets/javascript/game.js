@@ -32,6 +32,7 @@ $(document).ready(function () {
         $("#crystal4").attr("data-crystalValue", crystal4Num);
         $("#wins").text(wins);
         $("#losses").text(losses);
+        $("#winOrLose").text("");
 
         console.log($("crystal1"));
     }
