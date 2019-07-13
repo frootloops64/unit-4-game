@@ -15,67 +15,70 @@
 
 <body background="assets/images/bananas.png">
 
-    <h1>CrystalsCollector!</h1>
-    <!-- colour: #CB7032 -->
-    <div class="para">
-        <!-- colour: #FBE7CE  -->
-        <p>You will be given a random number at the start of the game.</p>
-        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of
-            points to your total score.
-        </p>
-        <p>You will the game by matching your total score to the random number, you lose the game if your
-            total score goes above the random number.
-        </p>
-        <p>The value of each crystal is hidden from you until you click on it.</p>
-        <p>Each time when the game starts, the game will change the values of each crystal.</p>
-    </div>
-    <div class="container">
+    <div id="container1" class="container">
+        <h1>CrystalsCollector!</h1>
+        <!-- colour: #CB7032 -->
+        <div class="para">
+            <!-- colour: #FBE7CE  -->
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of
+                points to your total score.
+            </p>
+            <p>You will the game by matching your total score to the random number, you lose the game if your
+                total score goes above the random number.
+            </p>
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <p>Each time when the game starts, the game will change the values of each crystal.</p>
+        </div>
+
         <div class="row">
             <div id="targetNumber" class="col-6">
                 <!-- colour: #54C887 -->
 
             </div>
-            <div class="col">
+            <div id="winsOrLosses" class="col-2">
                 <!-- colour: #38FEFB -->
                 <p>Wins: <span id="wins"></span></p>
-                <p>Loses: <span id="losses"></span></p>
+                <p>Losses: <span id="losses"></span></p>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img id="crystal1" class="crystalimage" src="assets/images/BlueGem.jpg" alt="Blue Gem" height=150px
+                        width=150px>
+                </div>
+                <div class="col">
+                    <img id="crystal2" class="crystalimage" src="assets/images/GreenGem.jpg" alt="Green Gem"
+                        height=150px width=150px>
+                </div>
+                <div class="col">
+                    <img id="crystal3" class="crystalimage" src="assets/images/PurpleGem.jpg" alt="Purple Gem"
+                        height=150px width=150px>
+                </div>
+                <div class="col">
+                    <img id="crystal4" class="crystalimage" src="assets/images/RedGem.jpg" alt="Red Gem" height=150px
+                        width=150px>
+                </div>
+            </div>
+        </div>
+
+        <div class="scores">
+            <div class="row">
+                <div id="yourScore" class="col-3">
+                    <!-- colour: #1FA396 -->
+                    Your total score is:
+                </div>
+                <div id="totalScore" class="col-3"></div>
+                <div class="col-3">
+                    <h3 id="winOrLose"></h3>
+                    <button type="button" class="btn">Press Play</button>
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <img id="crystal1" class="crystalimage" src="assets/images/BlueGem.jpg" alt="Blue Gem" height=150px
-                    width=150px>
-            </div>
-            <div class="col">
-                <img id="crystal2" class="crystalimage" src="assets/images/GreenGem.jpg" alt="Green Gem" height=150px
-                    width=150px>
-            </div>
-            <div class="col">
-                <img id="crystal3" class="crystalimage" src="assets/images/PurpleGem.jpg" alt="Purple Gem" height=150px
-                    width=150px>
-            </div>
-            <div class="col">
-                <img id="crystal4" class="crystalimage" src="assets/images/RedGem.jpg" alt="Red Gem" height=150px
-                    width=150px>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-3">
-                <!-- colour: #1FA396 -->
-                Your total score is:
-            </div>
-            <div id="totalScore" class="col-3"></div>
-            <div class="col-3">
-                <h3 id="winOrLose"></h3>
-                <button type="button" class="btn">Press Play</button>
-            </div>
-        </div>
 
 
 
